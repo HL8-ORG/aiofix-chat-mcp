@@ -1,0 +1,35 @@
+{
+  "name": "aiofix-ai-mcp",
+  "version": "0.0.0",
+  "description": "这是一个 monorepo 创建于 2025-06-05 03:16:08",
+  "main": "index.js",
+  "scripts": {
+    "repo:build": "bash scripts/build.sh",
+    "repo:init": "bash scripts/init.sh",
+    "repo:git": "bash scripts/git.sh",
+    "repo:tooling": "bash scripts/tooling.sh",
+    "repo:ui": "bash scripts/ui.sh",
+    "repo:demo": "bash scripts/demo.sh",
+    "repo:all-in-one": "bash scripts/all-in-one.sh",
+    "prepare": "husky install",
+    "check": "biome check ./ --fix",
+    "format": "biome format ./ --fix",
+    "lint": "biome lint ./",
+    "lint:fix": "biome lint ./ --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "cz-config.cjs"
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "commitizen": "^4.3.1",
+    "cz-customizable": "^7.4.0",
+    "husky": "^8.0.0",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "@pkg/tsconfig/internal-package.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@pkg/ui/*": ["./src/*"]
+    },
+    "lib": ["dom", "esnext"]
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist"]
+}
