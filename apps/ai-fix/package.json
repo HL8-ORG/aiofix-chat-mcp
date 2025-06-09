@@ -1,0 +1,42 @@
+{
+  "name": "ai-fix",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "ui-add": "pnpm dlx shadcn@latest add"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.0.1",
+    "@pkg/ui": "workspace:*",
+    "@tailwindcss/vite": "^4.1.8",
+    "@tanstack/react-query": "^5.80.6",
+    "@tanstack/react-router": "^1.120.16",
+    "@tanstack/react-router-devtools": "^1.120.16",
+    "@tanstack/react-start": "^1.120.16",
+    "better-auth": "^1.2.8",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.15.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.57.0",
+    "tailwind-merge": "^2.6.0",
+    "vinxi": "0.5.3",
+    "vite": "link:@tanstack/react-start/plugin/vite",
+    "zod": "^3.25.55"
+  },
+  "devDependencies": {
+    "@pkg/tsconfig": "workspace:*",
+    "@types/node": "^22.5.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4",
+    "typescript": "^5.7.2",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

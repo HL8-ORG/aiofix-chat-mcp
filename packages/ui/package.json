@@ -52,7 +52,7 @@
     "tailwind-merge": "^3.0.1",
     "tw-animate-css": "^1.2.4",
     "vaul": "^1.1.2",
-    "zod": "^3.25.51"
+    "zod": "^3.25.55"
   },
   "devDependencies": {
     "@pkg/tsconfig": "workspace:*",
